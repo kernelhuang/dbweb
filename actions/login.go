@@ -1,14 +1,14 @@
 package actions
 
 import (
-	"github.com/Unknwon/i18n"
-	"github.com/tango-contrib/captcha"
-	"github.com/tango-contrib/flash"
-	"github.com/tango-contrib/renders"
-	"github.com/tango-contrib/xsrf"
+	"github.com/kernelhuang/captcha"
+	"github.com/kernelhuang/flash"
+	"github.com/kernelhuang/renders"
+	"github.com/kernelhuang/xsrf"
+	"github.com/unknwon/i18n"
 
-	"github.com/go-xorm/dbweb/middlewares"
-	"github.com/go-xorm/dbweb/models"
+	"github.com/kernelhuang/dbweb/middlewares"
+	"github.com/kernelhuang/dbweb/models"
 )
 
 type Login struct {

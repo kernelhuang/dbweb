@@ -1,7 +1,7 @@
 package actions
 
 import (
-	"github.com/go-xorm/dbweb/middlewares"
+	"github.com/kernelhuang/dbweb/middlewares"
 	"github.com/lunny/tango"
 )
 

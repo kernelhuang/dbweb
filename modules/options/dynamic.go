@@ -1,3 +1,4 @@
+//go:build !bindata
 // +build !bindata
 
 // Copyright 2017 The XORM Authors. All rights reserved.
@@ -11,8 +12,8 @@ import (
 	"io/ioutil"
 	"path"
 
-	"github.com/Unknwon/com"
-	"github.com/go-xorm/dbweb/modules/setting"
+	"github.com/kernelhuang/dbweb/modules/setting"
+	"github.com/unknwon/com"
 )
 
 func Locale(name string) ([]byte, error) {

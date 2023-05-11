@@ -20,8 +20,8 @@ Now support English and 简体中文.
 # Installation
 
 ```Go
-go get github.com/go-xorm/dbweb
-go install github.com/go-xorm/dbweb
+go get github.com/kernelhuang/dbweb
+go install github.com/kernelhuang/dbweb
 ```
 # Build via make
 
@@ -37,7 +37,7 @@ Notice: If you want to serve via HTTPS, you still put your *.pem files on the `h
 # Run
 
 ```Shell
-./dbweb -home=$GOPATH/src/github.com/go-xorm/dbweb/
+./dbweb -home=$GOPATH/src/github.com/kernelhuang/dbweb/
 ```
 
 ```Shell

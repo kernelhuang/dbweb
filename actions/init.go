@@ -5,9 +5,9 @@ import (
 
 	_ "github.com/denisenkom/go-mssqldb"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/go-xorm/dbweb/models"
-	"github.com/go-xorm/xorm"
+	"github.com/kernelhuang/dbweb/models"
 	_ "github.com/lib/pq"
+	"xorm.io/xorm"
 )
 
 type DB struct {

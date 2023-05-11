@@ -9,8 +9,8 @@ import (
 
 	"github.com/lunny/log"
 
-	"github.com/go-xorm/dbweb/models"
-	"github.com/go-xorm/dbweb/modules/setting"
+	"github.com/kernelhuang/dbweb/models"
+	"github.com/kernelhuang/dbweb/modules/setting"
 )
 
 var (

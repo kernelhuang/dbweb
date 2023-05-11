@@ -3,13 +3,13 @@ package actions
 import (
 	"strings"
 
-	"github.com/go-xorm/dbweb/middlewares"
-	"github.com/go-xorm/dbweb/models"
+	"github.com/kernelhuang/dbweb/middlewares"
+	"github.com/kernelhuang/dbweb/models"
 
-	"github.com/Unknwon/i18n"
+	"github.com/kernelhuang/renders"
+	"github.com/kernelhuang/session"
 	"github.com/lunny/tango"
-	"github.com/tango-contrib/renders"
-	"github.com/tango-contrib/session"
+	"github.com/unknwon/i18n"
 )
 
 func formatLang(l string) string {

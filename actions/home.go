@@ -1,9 +1,9 @@
 package actions
 
 import (
-	"github.com/go-xorm/core"
-	"github.com/go-xorm/dbweb/models"
-	"github.com/tango-contrib/renders"
+	"github.com/kernelhuang/dbweb/models"
+	"github.com/kernelhuang/renders"
+	"xorm.io/core"
 )
 
 type Home struct {

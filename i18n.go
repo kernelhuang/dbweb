@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/Unknwon/i18n"
-	options "github.com/go-xorm/dbweb/modules/options"
+	options "github.com/kernelhuang/dbweb/modules/options"
+	"github.com/unknwon/i18n"
 )
 
 func InitI18n(langs []string) error {

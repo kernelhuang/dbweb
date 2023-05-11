@@ -7,22 +7,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/go-xorm/dbweb/modules/public"
-	"github.com/go-xorm/dbweb/modules/templates"
+	"github.com/kernelhuang/dbweb/modules/public"
+	"github.com/kernelhuang/dbweb/modules/templates"
 
-	"github.com/Unknwon/i18n"
-	"github.com/go-xorm/xorm"
+	"github.com/kernelhuang/binding"
+	"github.com/kernelhuang/captcha"
+	"github.com/kernelhuang/dbweb/actions"
+	"github.com/kernelhuang/dbweb/middlewares"
+	"github.com/kernelhuang/debug"
+	"github.com/kernelhuang/flash"
+	"github.com/kernelhuang/renders"
+	"github.com/kernelhuang/session"
 	"github.com/lunny/nodb"
 	"github.com/lunny/tango"
-	"github.com/tango-contrib/binding"
-	"github.com/tango-contrib/captcha"
-	"github.com/tango-contrib/debug"
-	"github.com/tango-contrib/flash"
-	"github.com/tango-contrib/renders"
-	"github.com/tango-contrib/session"
-
-	"github.com/go-xorm/dbweb/actions"
-	"github.com/go-xorm/dbweb/middlewares"
+	"github.com/unknwon/i18n"
 )
 
 var (
@@ -38,6 +36,7 @@ func isNil(a interface{}) bool {
 }
 
 func InitTango(isDebug bool) *tango.Tango {
+	xormVersion := "v1.3.2"
 	t := tango.New()
 	if isDebug {
 		t.Use(debug.Debug(debug.Options{
@@ -79,7 +78,7 @@ func InitTango(isDebug bool) *tango.Tango {
 			Vars: renders.T{
 				"GoVer":    strings.Trim(runtime.Version(), "go"),
 				"TangoVer": tango.Version(),
-				"XormVer":  xorm.Version,
+				"XormVer":  xormVersion,
 				"NodbVer":  nodb.Version,
 			},
 			FileSystem: templates.FileSystem("templates"),

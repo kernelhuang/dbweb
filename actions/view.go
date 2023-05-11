@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"xorm.io/xorm/schemas"
 
-	"github.com/go-xorm/core"
-	"github.com/go-xorm/dbweb/models"
-	"github.com/tango-contrib/renders"
+	"github.com/kernelhuang/dbweb/models"
+	"github.com/kernelhuang/renders"
 )
 
 type View struct {
@@ -37,7 +37,7 @@ func (c *View) Get() error {
 	}
 
 	var records = make([][]*string, 0)
-	var columns = make([]*core.Column, 0)
+	var columns = make([]*schemas.Column, 0)
 	tb := c.Req().FormValue("tb")
 	tb = strings.Replace(tb, `"`, "", -1)
 	tb = strings.Replace(tb, `'`, "", -1)
@@ -46,7 +46,7 @@ func (c *View) Get() error {
 	var isTableView = len(tb) > 0
 
 	sql := c.Req().FormValue("sql")
-	var table *core.Table
+	var table *schemas.Table
 	var pkIdx int
 	var isExecute bool
 	var affected int64
@@ -114,7 +114,7 @@ func (c *View) Get() error {
 				}
 			} else {
 				for _, col := range cols {
-					columns = append(columns, &core.Column{
+					columns = append(columns, &schemas.Column{
 						Name: col,
 					})
 				}

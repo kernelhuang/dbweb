@@ -3,12 +3,12 @@ package actions
 import (
 	"fmt"
 
-	"github.com/Unknwon/i18n"
-	"github.com/go-xorm/dbweb/models"
-	"github.com/tango-contrib/binding"
-	"github.com/tango-contrib/flash"
-	"github.com/tango-contrib/renders"
-	"github.com/tango-contrib/xsrf"
+	"github.com/kernelhuang/binding"
+	"github.com/kernelhuang/dbweb/models"
+	"github.com/kernelhuang/flash"
+	"github.com/kernelhuang/renders"
+	"github.com/kernelhuang/xsrf"
+	"github.com/unknwon/i18n"
 )
 
 type Addb struct {

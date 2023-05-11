@@ -3,8 +3,8 @@ package actions
 import (
 	"strconv"
 
-	"github.com/go-xorm/dbweb/models"
-	"github.com/tango-contrib/renders"
+	"github.com/kernelhuang/dbweb/models"
+	"github.com/kernelhuang/renders"
 )
 
 type Del struct {

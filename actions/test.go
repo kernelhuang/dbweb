@@ -6,7 +6,7 @@ import (
 
 	"github.com/lunny/tango"
 
-	"github.com/go-xorm/dbweb/models"
+	"github.com/kernelhuang/dbweb/models"
 )
 
 type Test struct {

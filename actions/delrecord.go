@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/go-xorm/dbweb/models"
-	"github.com/go-xorm/xorm"
+	"github.com/kernelhuang/dbweb/models"
+	"xorm.io/xorm"
 )
 
 type DelRecord struct {
